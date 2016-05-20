@@ -4,6 +4,7 @@
   "description": "Full Stack Redux Tutorial",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node index.js",
     "test": "mocha --compilers js:babel-core/register --recursive ./test/test_helper.js 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch"
   },
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "immutable": "~3.8.1",
-    "redux": "~3.5.2"
+    "redux": "~3.5.2",
+    "socket.io": "~1.4.6"
   }
 }
