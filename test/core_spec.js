@@ -124,6 +124,16 @@ describe('Application logic', () => {
             }));
         });
 
+        it('handles invalid vote checking current pair', () => {
+            const state = Map({
+                pair: List.of('Trainspotting', '28 Days Later')
+            });
+            const nextState = vote(state, 'Sunshine');
+            expect(nextState).to.equal(Map({
+                pair: List.of('Trainspotting', '28 Days Later')
+            }));
+        });
+
     });
 
 });
